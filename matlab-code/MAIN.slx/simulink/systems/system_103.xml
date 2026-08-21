@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 1922, 993]</P>
+  <P Name="ZoomFactor">175</P>
+  <Block BlockType="Inport" Name="In2" SID="104">
+    <P Name="Position">[385, 93, 415, 107]</P>
+    <P Name="ZOrder">319</P>
+    <P Name="BlockMirror">on</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="97">
+    <P Name="Position">[400, 20, 430, 50]</P>
+    <P Name="ZOrder">313</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Value">pdrr</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="114">
+    <P Name="Position">[330, 150, 360, 180]</P>
+    <P Name="ZOrder">322</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Fcn" Name="Fcn" SID="117">
+    <P Name="Position">[75, 85, 135, 115]</P>
+    <P Name="ZOrder">324</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Expr">pdrr</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="118">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[10, 85, 40, 115]</P>
+    <P Name="ZOrder">325</P>
+    <P Name="BlockMirror">on</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="94">
+    <P Name="Position">[215, 80, 265, 120]</P>
+    <P Name="ZOrder">310</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="105">
+    <P Name="Position">[-75, 93, -45, 107]</P>
+    <P Name="ZOrder">320</P>
+    <P Name="BlockMirror">on</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">50</P>
+    <P Name="Src">104#out:1</P>
+    <P Name="Dst">94#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">97#out:1</P>
+    <P Name="Points">[-83, 0; 0, 50]</P>
+    <P Name="Dst">94#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">58</P>
+    <P Name="Src">114#out:1</P>
+    <P Name="Points">[19, 0; 0, -50]</P>
+    <P Name="Dst">94#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">65</P>
+    <P Name="Src">94#out:1</P>
+    <P Name="Dst">117#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">66</P>
+    <P Name="Src">117#out:1</P>
+    <P Name="Dst">118#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">67</P>
+    <P Name="Src">118#out:1</P>
+    <P Name="Dst">105#in:1</P>
+  </Line>
+</System>

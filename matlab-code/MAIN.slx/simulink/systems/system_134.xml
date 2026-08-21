@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 1922, 993]</P>
+  <Block BlockType="Inport" Name="u" SID="135">
+    <P Name="Position">[350, 343, 380, 357]</P>
+    <P Name="ZOrder">386</P>
+    <P Name="BlockMirror">on</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="129">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[215, 335, 245, 365]</P>
+    <P Name="ZOrder">383</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">8.0</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&gt;</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="131">
+    <P Name="Position">[240, 280, 270, 310]</P>
+    <P Name="ZOrder">385</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Pressure drop rate" SID="130">
+    <P Name="Position">[20, 310, 50, 340]</P>
+    <P Name="ZOrder">384</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Value">0.12</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch1" SID="128">
+    <P Name="Position">[125, 215, 165, 265]</P>
+    <P Name="ZOrder">382</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="NameLocation">right</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="136">
+    <P Name="Position">[138, 100, 152, 130]</P>
+    <P Name="ZOrder">387</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="NameLocation">right</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">90</P>
+    <P Name="Src">129#out:1</P>
+    <P Name="Points">[-65, 0]</P>
+    <P Name="Dst">128#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">93</P>
+    <P Name="Src">131#out:1</P>
+    <P Name="Points">[-75, 0]</P>
+    <P Name="Dst">128#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">92</P>
+    <P Name="Src">130#out:1</P>
+    <P Name="Points">[75, 0]</P>
+    <P Name="Dst">128#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">135#out:1</P>
+    <P Name="Dst">129#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">95</P>
+    <P Name="Src">128#out:1</P>
+    <P Name="Dst">136#in:1</P>
+  </Line>
+</System>

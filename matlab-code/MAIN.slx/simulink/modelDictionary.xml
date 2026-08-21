@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
+  <System type="System" uuid="8cc8e317-0f72-4928-9daf-08296e918f91">
+    <Parameter type="Parameter" uuid="9262ab7f-81ad-4685-9555-ad903922c343">
+      <Identifier>Qv</Identifier>
+      <Name>Qv</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="830457e0-85d7-44b9-9cc2-0287df7965f3">
+      <Identifier>a1</Identifier>
+      <Name>a1</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="9a7dff8e-3b9d-4a76-8489-73e5c73962ea">
+      <Identifier>am</Identifier>
+      <Name>am</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="f29f58a7-c72d-46c2-97d7-1615de3f96ef">
+      <Identifier>pdr0</Identifier>
+      <Name>pdr0</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="0d0887f6-59d1-4e65-aea7-62a8a4e6e910">
+      <Identifier>pdrr</Identifier>
+      <Name>pdrr</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="2c0a59a9-ef82-47cb-85b3-0e3de94708bd">
+      <Identifier>thresh</Identifier>
+      <Name>thresh</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="a52b40d4-f312-44ed-be6a-3fb177b95091">
+      <Argument>true</Argument>
+      <Access>PUBLIC</Access>
+      <Identifier>threshold</Identifier>
+      <Name>threshold</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="e6f4a22f-3061-410e-992f-2aaa26b5de53">
+      <Identifier>tv</Identifier>
+      <Name>tv</Name>
+    </Parameter>
+    <Interface type="Interface" uuid="915f4184-95e2-4cc8-a569-15016541000f">
+      <Parameter type="Parameter" uuid="a52b40d4-f312-44ed-be6a-3fb177b95091"/>
+    </Interface>
+  </System>
+</MF0>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 1922, 993]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">40</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">146</P>
+  <Block BlockType="Sum" Name="Add" SID="119">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[735, 472, 765, 503]</P>
+    <P Name="ZOrder">363</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-+</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant" SID="122">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[260, 475, 290, 505]</P>
+    <P Name="ZOrder">366</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">8.0</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&gt;=</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="Compressor" SID="4">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[360, 25, 530, 165]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="BackgroundColor">[0.258824, 0.450980, 0.901961]</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_4"/>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Qv</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_4"/>
+  </Block>
+  <Block BlockType="CustomWebBlock" Name="Current (mA)" SID="142">
+    <P Name="Position">[953, -181, 1274, -97]</P>
+    <P Name="ZOrder">392</P>
+    <P Name="ForegroundColor">[0.988235, 0.988235, 0.772549]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">14</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_142"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;DisplayComponent&quot;,&quot;settings&quot;:{&quot;bold&quot;:true,&quot;font&quot;:&quot;Courier Prime&quot;,&quot;fontColor&quot;:[255,255,200],&quot;fontSize&quot;:48,&quot;format&quot;:&quot;short&quot;,&quot;formatString&quot;:&quot;%d&quot;,&quot;italic&quot;:false,&quot;position&quot;:[0,0,1,1],&quot;underline&quot;:false}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[300,80],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PHN2ZyBpZD0iZnJhbWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAzODAgMTAxIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzAwMmI0Mjt9LmNscy0ye2ZpbGw6IzQyNzA4Mjt9LmNscy0ze2ZpbGw6dXJsKCNyYWRpYWwtZ3JhZGllbnQpO308L3N0eWxlPjxyYWRpYWxHcmFkaWVudCBpZD0icmFkaWFsLWdyYWRpZW50IiBjeD0iMTkwIiBjeT0iNTAuNSIgcj0iMjY5LjIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwLjAxIiBzdG9wLWNvbG9yPSIjM2U0ZjU4Ii8+PHN0b3Agb2Zmc2V0PSIwLjA2IiBzdG9wLWNvbG9yPSIjNDQ1NzYxIi8+PHN0b3Agb2Zmc2V0PSIwLjE1IiBzdG9wLWNvbG9yPSIjNTU2YTc2Ii8+PHN0b3Agb2Zmc2V0PSIwLjI1IiBzdG9wLWNvbG9yPSIjNmQ4ODk1Ii8+PHN0b3Agb2Zmc2V0PSIwLjM4IiBzdG9wLWNvbG9yPSIjOGZiMmMzIi8+PHN0b3Agb2Zmc2V0PSIwLjUyIiBzdG9wLWNvbG9yPSIjYjZlNGZhIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU0NjU3Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxLTIiPjxyZWN0IGlkPSJyZWN0MTAzNiIgY2xhc3M9ImNscy0xIiB4PSIxMSIgeT0iMTEiIHdpZHRoPSIzNTgiIGhlaWdodD0iNzkiLz48cGF0aCBpZD0icGF0aDEwMzgiIGNsYXNzPSJjbHMtMiIgZD0iTTgsOFY5M0gzNzJWOFpNMzY5LDkwSDExVjExSDM2OVoiLz48cGF0aCBpZD0icGF0aDEwNDAiIGNsYXNzPSJjbHMtMyIgZD0iTTAsMFYxMDFIMzgwVjBaTTM3Miw5M0g4VjhIMzcyWiIvPjwvZz48L2c+PC9zdmc+&quot;,&quot;srcOrientation&quot;:&quot;Right&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;angle&quot;:0,&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;derived&quot;:{&quot;blockParameters&quot;:{&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;format&quot;:&quot;short&quot;,&quot;formatString&quot;:&quot;%d&quot;}},&quot;settings&quot;:{&quot;BindingType&quot;:&quot;signal&quot;,&quot;aspectRatio&quot;:1.032258064516129,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:0.14,&quot;backgroundOpacity&quot;:1,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;version&quot;:&quot;R2023b&quot;},&quot;type&quot;:&quot;Display&quot;}</P>
+  </Block>
+  <Block BlockType="CustomWebBlock" Name="Milli Ammeter" SID="143">
+    <P Name="Position">[890, -519, 1334, -255]</P>
+    <P Name="ZOrder">393</P>
+    <P Name="ForegroundColor">[1.000000, 1.000000, 0.784300]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">14</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_143"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;CircularScaleComponent&quot;,&quot;settings&quot;:{&quot;bounds&quot;:{&quot;max&quot;:20,&quot;min&quot;:0,&quot;tickInterval&quot;:&quot;auto&quot;},&quot;direction&quot;:&quot;cw&quot;,&quot;flipLimits&quot;:0,&quot;innerRadius&quot;:0.75,&quot;internalTickHeightScaleFactor&quot;:1,&quot;labelColor&quot;:[255,255,200],&quot;labelFont&quot;:{&quot;font&quot;:&quot;Arial&quot;,&quot;fontSize&quot;:12},&quot;labelRadius&quot;:0.528,&quot;labelTransparency&quot;:1,&quot;minorTickHeightScaleFactor&quot;:0.2,&quot;needleImage&quot;:{&quot;size&quot;:[200,50],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjEuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwMCA1MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNFQzIxMjc7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYyLjgsMTMuN0MxNjksNC40LDE4MS43LDEuOSwxOTEsOC4xczExLjgsMTguOSw1LjYsMjguMnMtMTguOSwxMS44LTI4LjIsNS42bDAsMAoJQzE1OS4xLDM1LjYsMTU2LjYsMjMsMTYyLjgsMTMuN0wxNjIuOCwxMy43eiBNMTY1LjgsMTUuOGMtNS4xLDcuNi0zLjEsMTcuOSw0LjYsMjNjNy42LDUuMSwxNy45LDMuMSwyMy00LjYKCWM1LjEtNy42LDMuMS0xNy45LTQuNi0yM2wwLDBDMTgxLjIsNi4yLDE3MC45LDguMiwxNjUuOCwxNS44eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMC40LDI1Ljl2LTMuM2wxNTktMi41Yy0wLjcsMi42LTAuNyw1LjIsMCw3LjhMMC40LDI1Ljl6Ii8+CjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE3OS42IiBjeT0iMjQiIHI9IjAuNyIvPgo8L3N2Zz4K&quot;},&quot;needleOffset&quot;:[0.18464878250906522,0],&quot;needleOrientation&quot;:-45,&quot;needleRotation&quot;:180,&quot;needleSize&quot;:{&quot;height&quot;:0.11741692305346914,&quot;width&quot;:0.46108337545091255},&quot;outerRadius&quot;:0.9,&quot;position&quot;:[0.05,0.05,0.9,1.6],&quot;referencePoint&quot;:&quot;auto&quot;,&quot;scaleAngle&quot;:180,&quot;scaleAngleOffset&quot;:180,&quot;scaleColors&quot;:[],&quot;scaleColorsSize&quot;:0.2,&quot;scaleDirection&quot;:&quot;CW&quot;,&quot;scalePosition&quot;:[0,0,1,1],&quot;showLabels&quot;:1,&quot;showMinorTicks&quot;:1,&quot;showSpanLine&quot;:1,&quot;showTicks&quot;:1,&quot;tickColor&quot;:[252,252,197],&quot;tickTransparency&quot;:1,&quot;valueBarColor&quot;:[0,114,189],&quot;valueBarPosition&quot;:[0,0,1,1],&quot;valueBarSize&quot;:0.2,&quot;valueBarTransparency&quot;:1}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[252,150],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0iTGF5ZXJfMl8xXyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDAgMjk4IgoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwMCAyOTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9Cgkuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8wMDAwMDA1NDk2Mzg3MDA3ODYwODAwNzgxMDAwMDAxMzY5MDc2MjA3Nzg3MTY0MTc2NV8pO30KCS5zdDJ7ZmlsbDp1cmwoI1NWR0lEXzAwMDAwMDA5NTg5OTIyNjMyMjMxMzk4ODQwMDAwMDA0MjQxOTkxNDgyOTc1NjM1MzU2Xyk7fQoJLnN0M3tmaWxsOnVybCgjcGF0aDc2XzAwMDAwMDM4MzgxOTY5OTE5NDAyMzQxNTgwMDAwMDA4NTU3NjcyMjQ4MDMwNTc5MzYwXyk7fQo8L3N0eWxlPgo8Zz4KCQoJCTxyYWRpYWxHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGN4PSItMzc1LjU0MjYiIGN5PSIxNTcuMzU5NiIgcj0iMjI0LjIxOTMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4wMzUzNDBlLTEzIC0xIDIuMjc0MiAyLjM1NDU5OWUtMTMgLTEwNy4wMjQ5IC0yNjAuMDcyNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMkY0NjUxIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4xMTAxIiBzdHlsZT0ic3RvcC1jb2xvcjojMzY0RTVBIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4yOTQzIiBzdHlsZT0ic3RvcC1jb2xvcjojNDY2MjZGIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4zNTcxIiBzdHlsZT0ic3RvcC1jb2xvcjojNEM2OTc3Ii8+CgkJPHN0b3AgIG9mZnNldD0iMC4zODg0IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI3MDdFIi8+CgkJPHN0b3AgIG9mZnNldD0iMC40NDA5IiBzdHlsZT0ic3RvcC1jb2xvcjojNjE4MjkyIi8+CgkJPHN0b3AgIG9mZnNldD0iMC41MDgxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0JBMEIyIi8+CgkJPHN0b3AgIG9mZnNldD0iMC41ODY3IiBzdHlsZT0ic3RvcC1jb2xvcjojQTBDQkRGIi8+CgkJPHN0b3AgIG9mZnNldD0iMC42MjY0IiBzdHlsZT0ic3RvcC1jb2xvcjojQjZFNEZBIi8+CgkJPHN0b3AgIG9mZnNldD0iMC44Mjk3IiBzdHlsZT0ic3RvcC1jb2xvcjojODJBNEI1Ii8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ5NS4yLDI1MEM0OTUuMiwxMTQuNiwzODUuNCw0LjgsMjUwLDQuOFM0LjgsMTE0LjYsNC44LDI1MGMwLDMuOC0wLjIsMjQuNi0wLjEsMzZjMCwzLjksMy4xLDcsNyw3aDQ3Ni41CgkJYzMuOSwwLDctMy4xLDctN0M0OTUuMiwyNzQuOCw0OTUuMiwyNTMuNSw0OTUuMiwyNTB6Ii8+CjwvZz4KPGc+CgkKCQk8cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzAwMDAwMTIwNTQ2MDkzMDE1MTE5Nzc3NzEwMDAwMDAwODg4MTI3NDQyMTU2Mjg4MTQxXyIgY3g9IjI0Mi4yNjU4IiBjeT0iNTMyLjQyNjgiIHI9IjM2OC40MjAzIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEuMDAwMyAwIC01MTAuMDA2NikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KCQk8c3RvcCAgb2Zmc2V0PSIxLjA5ODkwMGUtMDIiIHN0eWxlPSJzdG9wLWNvbG9yOiMzRTRGNTgiLz4KCQk8c3RvcCAgb2Zmc2V0PSI2LjEzMjQxN2UtMDIiIHN0eWxlPSJzdG9wLWNvbG9yOiM0NDU3NjEiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjE0NTgiIHN0eWxlPSJzdG9wLWNvbG9yOiM1NTZBNzYiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjI1NDEiIHN0eWxlPSJzdG9wLWNvbG9yOiM2RDg4OTUiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjM4MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiM4RkIyQzMiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjUxNjUiIHN0eWxlPSJzdG9wLWNvbG9yOiNCNkU0RkEiLz4KCQk8c3RvcCAgb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojMTU0NjU3Ii8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8wMDAwMDEyMDU0NjA5MzAxNTExOTc3NzcxMDAwMDAwMDg4ODEyNzQ0MjE1NjI4ODE0MV8pOyIgZD0iTTQ4NC4yLDI1MC4xCgkJYzAtMTI5LjQtMTA0LjktMjM0LjItMjM0LjItMjM0LjJTMTUuOCwxMjAuNywxNS44LDI1MC4xdjI3LjhjMCwyLjMsMS45LDQuMSw0LjEsNGw0NjAuMywwLjFjMi4yLDAsNC0xLjgsNC00TDQ4NC4yLDI1MC4xeiIvPgo8L2c+CjxnPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8wMDAwMDExOTA3NzA4MDI2NjA0Nzg1MTk5MDAwMDAxNTUyMjg2NjQxNTczMTY0OTcyNF8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjUwIiB5MT0iODAxLjQ5MyIgeDI9IjI1MCIgeTI9IjU3Ni44NTQ3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEgMCAtNTEwKSI+CgkJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUE3RCIvPgoJCTxzdG9wICBvZmZzZXQ9IjYuNDE3NTg3ZS0wMiIgc3R5bGU9InN0b3AtY29sb3I6IzAwNEM2QiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuMTU3NiIgc3R5bGU9InN0b3AtY29sb3I6IzAwM0I1NSIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuMjYwMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMkI0MiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuNTI4MSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMTgyNiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuNzE1MSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDYwQyIvPgoJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDAiLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8cGF0aCBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzAwMDAwMTE5MDc3MDgwMjY2MDQ3ODUxOTkwMDAwMDE1NTIyODY2NDE1NzMxNjQ5NzI0Xyk7IiBkPSJNNDgwLjEsMjUwLjEKCQljMC0xMjYuOC0xMDIuNS0yMjkuNi0yMjkuMi0yMzAuMWMtMTI3LjEtMC41LTIzMSwxMDQuOC0yMzEsMjMxLjl2MjMuOWMwLDEuMSwwLjksMiwyLjEsMmw0NTYuMSwwLjFjMS4xLDAsMi0wLjksMi0yVjI1MC4xeiIvPgo8L2c+CjxsaW5lYXJHcmFkaWVudCBpZD0icGF0aDc2XzAwMDAwMTY5NTQ3MDc1NzMwMjMwNDQ2NTAwMDAwMDA1ODMzMDc4NjU4ODU2NDgxMTkyXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxOTMuMTE0MyIgeTE9Ii05MS40NzcyIiB4Mj0iMTkzLjExNDMiIHkyPSI1Ni45NzE0IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMjg4NSAwIDAgLTEuMzI3NiAxLjE3MjMgMTAzLjQ2MDcpIj4KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTQxNEUiLz4KCTxzdG9wICBvZmZzZXQ9IjAuMTkwOCIgc3R5bGU9InN0b3AtY29sb3I6IzAwMzQ0NCIvPgoJPHN0b3AgIG9mZnNldD0iMC40NTMzIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAyMjMwIi8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjY4NTMiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDEyMUIiLz4KCTxzdG9wICBvZmZzZXQ9IjAuODc1NCIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDQwOCIvPgoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBpZD0icGF0aDc2IiBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiBzdHlsZT0iZmlsbDp1cmwoI3BhdGg3Nl8wMDAwMDE2OTU0NzA3NTczMDIzMDQ0NjUwMDAwMDAwNTgzMzA3ODY1ODg1NjQ4MTE5Ml8pOyIgZD0iCglNNDY2LjcsMTgxLjhDNDM0LjMsOTQuMiwzNDkuOSwzMS42LDI1MC45LDMxLjZDMTUwLDMxLjYsNjQuMyw5Ni42LDMzLjMsMTg3YzE4LjYsNDQuOSwxMDYuNiw4LjEsMjE0LjEsOC4xCglDMzU4LjcsMTk0LjksNDUyLjIsMjM0LjUsNDY2LjcsMTgxLjh6Ii8+Cjwvc3ZnPgo=&quot;,&quot;srcOrientation&quot;:&quot;Right&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;,&quot;srcOrientation&quot;:[]},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;derived&quot;:{&quot;blockParameters&quot;:{&quot;ForegroundColor&quot;:[0.9882352941176471,0.9882352941176471,0.7725490196078432],&quot;Limits&quot;:{&quot;Max&quot;:20,&quot;Min&quot;:0,&quot;Ticks&quot;:&quot;auto&quot;},&quot;ScaleColors&quot;:[],&quot;ScaleDirection&quot;:&quot;Clockwise&quot;,&quot;ScaleMax&quot;:20,&quot;ScaleMin&quot;:0,&quot;TickInterval&quot;:&quot;auto&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;}},&quot;settings&quot;:{&quot;BindingType&quot;:&quot;signal&quot;,&quot;aspectRatio&quot;:1.032258064516129,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:1,&quot;backgroundOpacity&quot;:1,&quot;direction&quot;:&quot;cw&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;flipLimits&quot;:0,&quot;orientation&quot;:&quot;horizontal&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;variant&quot;:&quot;half&quot;,&quot;version&quot;:&quot;R2023a&quot;},&quot;type&quot;:&quot;CircularGauge&quot;}</P>
+  </Block>
+  <Block BlockType="CustomWebBlock" Name="Pressure (bar)" SID="133">
+    <P Name="Position">[113, -206, 434, -122]</P>
+    <P Name="ZOrder">381</P>
+    <P Name="ForegroundColor">[0.988235, 0.988235, 0.772549]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">14</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_133"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;DisplayComponent&quot;,&quot;settings&quot;:{&quot;bold&quot;:true,&quot;font&quot;:&quot;Courier Prime&quot;,&quot;fontColor&quot;:[255,255,200],&quot;fontSize&quot;:48,&quot;format&quot;:&quot;short&quot;,&quot;formatString&quot;:&quot;%d&quot;,&quot;italic&quot;:false,&quot;position&quot;:[0,0,1,1],&quot;underline&quot;:false}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[300,80],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PHN2ZyBpZD0iZnJhbWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAzODAgMTAxIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzAwMmI0Mjt9LmNscy0ye2ZpbGw6IzQyNzA4Mjt9LmNscy0ze2ZpbGw6dXJsKCNyYWRpYWwtZ3JhZGllbnQpO308L3N0eWxlPjxyYWRpYWxHcmFkaWVudCBpZD0icmFkaWFsLWdyYWRpZW50IiBjeD0iMTkwIiBjeT0iNTAuNSIgcj0iMjY5LjIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwLjAxIiBzdG9wLWNvbG9yPSIjM2U0ZjU4Ii8+PHN0b3Agb2Zmc2V0PSIwLjA2IiBzdG9wLWNvbG9yPSIjNDQ1NzYxIi8+PHN0b3Agb2Zmc2V0PSIwLjE1IiBzdG9wLWNvbG9yPSIjNTU2YTc2Ii8+PHN0b3Agb2Zmc2V0PSIwLjI1IiBzdG9wLWNvbG9yPSIjNmQ4ODk1Ii8+PHN0b3Agb2Zmc2V0PSIwLjM4IiBzdG9wLWNvbG9yPSIjOGZiMmMzIi8+PHN0b3Agb2Zmc2V0PSIwLjUyIiBzdG9wLWNvbG9yPSIjYjZlNGZhIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU0NjU3Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxLTIiPjxyZWN0IGlkPSJyZWN0MTAzNiIgY2xhc3M9ImNscy0xIiB4PSIxMSIgeT0iMTEiIHdpZHRoPSIzNTgiIGhlaWdodD0iNzkiLz48cGF0aCBpZD0icGF0aDEwMzgiIGNsYXNzPSJjbHMtMiIgZD0iTTgsOFY5M0gzNzJWOFpNMzY5LDkwSDExVjExSDM2OVoiLz48cGF0aCBpZD0icGF0aDEwNDAiIGNsYXNzPSJjbHMtMyIgZD0iTTAsMFYxMDFIMzgwVjBaTTM3Miw5M0g4VjhIMzcyWiIvPjwvZz48L2c+PC9zdmc+&quot;,&quot;srcOrientation&quot;:&quot;Right&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;angle&quot;:0,&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;derived&quot;:{&quot;blockParameters&quot;:{&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;format&quot;:&quot;short&quot;,&quot;formatString&quot;:&quot;%d&quot;}},&quot;settings&quot;:{&quot;BindingType&quot;:&quot;signal&quot;,&quot;aspectRatio&quot;:1.032258064516129,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:0.14,&quot;backgroundOpacity&quot;:1,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;version&quot;:&quot;R2023b&quot;},&quot;type&quot;:&quot;Display&quot;}</P>
+  </Block>
+  <Block BlockType="CustomWebBlock" Name="Pressure Gauge" SID="132">
+    <P Name="Position">[50, -519, 494, -255]</P>
+    <P Name="ZOrder">380</P>
+    <P Name="ForegroundColor">[1.000000, 1.000000, 0.784300]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">14</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_132"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;CircularScaleComponent&quot;,&quot;settings&quot;:{&quot;bounds&quot;:{&quot;max&quot;:7,&quot;min&quot;:0,&quot;tickInterval&quot;:&quot;auto&quot;},&quot;direction&quot;:&quot;cw&quot;,&quot;flipLimits&quot;:0,&quot;innerRadius&quot;:0.75,&quot;internalTickHeightScaleFactor&quot;:1,&quot;labelColor&quot;:[255,255,200],&quot;labelFont&quot;:{&quot;font&quot;:&quot;Arial&quot;,&quot;fontSize&quot;:12},&quot;labelRadius&quot;:0.528,&quot;labelTransparency&quot;:1,&quot;minorTickHeightScaleFactor&quot;:0.2,&quot;needleImage&quot;:{&quot;size&quot;:[200,50],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjEuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwMCA1MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNFQzIxMjc7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYyLjgsMTMuN0MxNjksNC40LDE4MS43LDEuOSwxOTEsOC4xczExLjgsMTguOSw1LjYsMjguMnMtMTguOSwxMS44LTI4LjIsNS42bDAsMAoJQzE1OS4xLDM1LjYsMTU2LjYsMjMsMTYyLjgsMTMuN0wxNjIuOCwxMy43eiBNMTY1LjgsMTUuOGMtNS4xLDcuNi0zLjEsMTcuOSw0LjYsMjNjNy42LDUuMSwxNy45LDMuMSwyMy00LjYKCWM1LjEtNy42LDMuMS0xNy45LTQuNi0yM2wwLDBDMTgxLjIsNi4yLDE3MC45LDguMiwxNjUuOCwxNS44eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMC40LDI1Ljl2LTMuM2wxNTktMi41Yy0wLjcsMi42LTAuNyw1LjIsMCw3LjhMMC40LDI1Ljl6Ii8+CjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE3OS42IiBjeT0iMjQiIHI9IjAuNyIvPgo8L3N2Zz4K&quot;},&quot;needleOffset&quot;:[0.18464878250906522,0],&quot;needleOrientation&quot;:-45,&quot;needleRotation&quot;:180,&quot;needleSize&quot;:{&quot;height&quot;:0.11741692305346914,&quot;width&quot;:0.46108337545091255},&quot;outerRadius&quot;:0.9,&quot;position&quot;:[0.05,0.05,0.9,1.6],&quot;referencePoint&quot;:&quot;auto&quot;,&quot;scaleAngle&quot;:180,&quot;scaleAngleOffset&quot;:180,&quot;scaleColors&quot;:[],&quot;scaleColorsSize&quot;:0.2,&quot;scaleDirection&quot;:&quot;CW&quot;,&quot;scalePosition&quot;:[0,0,1,1],&quot;showLabels&quot;:1,&quot;showMinorTicks&quot;:1,&quot;showSpanLine&quot;:1,&quot;showTicks&quot;:1,&quot;tickColor&quot;:[252,252,197],&quot;tickTransparency&quot;:1,&quot;valueBarColor&quot;:[0,114,189],&quot;valueBarPosition&quot;:[0,0,1,1],&quot;valueBarSize&quot;:0.2,&quot;valueBarTransparency&quot;:1}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[252,150],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0iTGF5ZXJfMl8xXyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDAgMjk4IgoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwMCAyOTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9Cgkuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8wMDAwMDA1NDk2Mzg3MDA3ODYwODAwNzgxMDAwMDAxMzY5MDc2MjA3Nzg3MTY0MTc2NV8pO30KCS5zdDJ7ZmlsbDp1cmwoI1NWR0lEXzAwMDAwMDA5NTg5OTIyNjMyMjMxMzk4ODQwMDAwMDA0MjQxOTkxNDgyOTc1NjM1MzU2Xyk7fQoJLnN0M3tmaWxsOnVybCgjcGF0aDc2XzAwMDAwMDM4MzgxOTY5OTE5NDAyMzQxNTgwMDAwMDA4NTU3NjcyMjQ4MDMwNTc5MzYwXyk7fQo8L3N0eWxlPgo8Zz4KCQoJCTxyYWRpYWxHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGN4PSItMzc1LjU0MjYiIGN5PSIxNTcuMzU5NiIgcj0iMjI0LjIxOTMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4wMzUzNDBlLTEzIC0xIDIuMjc0MiAyLjM1NDU5OWUtMTMgLTEwNy4wMjQ5IC0yNjAuMDcyNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMkY0NjUxIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4xMTAxIiBzdHlsZT0ic3RvcC1jb2xvcjojMzY0RTVBIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4yOTQzIiBzdHlsZT0ic3RvcC1jb2xvcjojNDY2MjZGIi8+CgkJPHN0b3AgIG9mZnNldD0iMC4zNTcxIiBzdHlsZT0ic3RvcC1jb2xvcjojNEM2OTc3Ii8+CgkJPHN0b3AgIG9mZnNldD0iMC4zODg0IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI3MDdFIi8+CgkJPHN0b3AgIG9mZnNldD0iMC40NDA5IiBzdHlsZT0ic3RvcC1jb2xvcjojNjE4MjkyIi8+CgkJPHN0b3AgIG9mZnNldD0iMC41MDgxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0JBMEIyIi8+CgkJPHN0b3AgIG9mZnNldD0iMC41ODY3IiBzdHlsZT0ic3RvcC1jb2xvcjojQTBDQkRGIi8+CgkJPHN0b3AgIG9mZnNldD0iMC42MjY0IiBzdHlsZT0ic3RvcC1jb2xvcjojQjZFNEZBIi8+CgkJPHN0b3AgIG9mZnNldD0iMC44Mjk3IiBzdHlsZT0ic3RvcC1jb2xvcjojODJBNEI1Ii8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ5NS4yLDI1MEM0OTUuMiwxMTQuNiwzODUuNCw0LjgsMjUwLDQuOFM0LjgsMTE0LjYsNC44LDI1MGMwLDMuOC0wLjIsMjQuNi0wLjEsMzZjMCwzLjksMy4xLDcsNyw3aDQ3Ni41CgkJYzMuOSwwLDctMy4xLDctN0M0OTUuMiwyNzQuOCw0OTUuMiwyNTMuNSw0OTUuMiwyNTB6Ii8+CjwvZz4KPGc+CgkKCQk8cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzAwMDAwMTIwNTQ2MDkzMDE1MTE5Nzc3NzEwMDAwMDAwODg4MTI3NDQyMTU2Mjg4MTQxXyIgY3g9IjI0Mi4yNjU4IiBjeT0iNTMyLjQyNjgiIHI9IjM2OC40MjAzIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEuMDAwMyAwIC01MTAuMDA2NikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KCQk8c3RvcCAgb2Zmc2V0PSIxLjA5ODkwMGUtMDIiIHN0eWxlPSJzdG9wLWNvbG9yOiMzRTRGNTgiLz4KCQk8c3RvcCAgb2Zmc2V0PSI2LjEzMjQxN2UtMDIiIHN0eWxlPSJzdG9wLWNvbG9yOiM0NDU3NjEiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjE0NTgiIHN0eWxlPSJzdG9wLWNvbG9yOiM1NTZBNzYiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjI1NDEiIHN0eWxlPSJzdG9wLWNvbG9yOiM2RDg4OTUiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjM4MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiM4RkIyQzMiLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjUxNjUiIHN0eWxlPSJzdG9wLWNvbG9yOiNCNkU0RkEiLz4KCQk8c3RvcCAgb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojMTU0NjU3Ii8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8wMDAwMDEyMDU0NjA5MzAxNTExOTc3NzcxMDAwMDAwMDg4ODEyNzQ0MjE1NjI4ODE0MV8pOyIgZD0iTTQ4NC4yLDI1MC4xCgkJYzAtMTI5LjQtMTA0LjktMjM0LjItMjM0LjItMjM0LjJTMTUuOCwxMjAuNywxNS44LDI1MC4xdjI3LjhjMCwyLjMsMS45LDQuMSw0LjEsNGw0NjAuMywwLjFjMi4yLDAsNC0xLjgsNC00TDQ4NC4yLDI1MC4xeiIvPgo8L2c+CjxnPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8wMDAwMDExOTA3NzA4MDI2NjA0Nzg1MTk5MDAwMDAxNTUyMjg2NjQxNTczMTY0OTcyNF8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjUwIiB5MT0iODAxLjQ5MyIgeDI9IjI1MCIgeTI9IjU3Ni44NTQ3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEgMCAtNTEwKSI+CgkJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUE3RCIvPgoJCTxzdG9wICBvZmZzZXQ9IjYuNDE3NTg3ZS0wMiIgc3R5bGU9InN0b3AtY29sb3I6IzAwNEM2QiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuMTU3NiIgc3R5bGU9InN0b3AtY29sb3I6IzAwM0I1NSIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuMjYwMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMkI0MiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuNTI4MSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMTgyNiIvPgoJCTxzdG9wICBvZmZzZXQ9IjAuNzE1MSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDYwQyIvPgoJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDAiLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8cGF0aCBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzAwMDAwMTE5MDc3MDgwMjY2MDQ3ODUxOTkwMDAwMDE1NTIyODY2NDE1NzMxNjQ5NzI0Xyk7IiBkPSJNNDgwLjEsMjUwLjEKCQljMC0xMjYuOC0xMDIuNS0yMjkuNi0yMjkuMi0yMzAuMWMtMTI3LjEtMC41LTIzMSwxMDQuOC0yMzEsMjMxLjl2MjMuOWMwLDEuMSwwLjksMiwyLjEsMmw0NTYuMSwwLjFjMS4xLDAsMi0wLjksMi0yVjI1MC4xeiIvPgo8L2c+CjxsaW5lYXJHcmFkaWVudCBpZD0icGF0aDc2XzAwMDAwMTY5NTQ3MDc1NzMwMjMwNDQ2NTAwMDAwMDA1ODMzMDc4NjU4ODU2NDgxMTkyXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxOTMuMTE0MyIgeTE9Ii05MS40NzcyIiB4Mj0iMTkzLjExNDMiIHkyPSI1Ni45NzE0IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMjg4NSAwIDAgLTEuMzI3NiAxLjE3MjMgMTAzLjQ2MDcpIj4KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTQxNEUiLz4KCTxzdG9wICBvZmZzZXQ9IjAuMTkwOCIgc3R5bGU9InN0b3AtY29sb3I6IzAwMzQ0NCIvPgoJPHN0b3AgIG9mZnNldD0iMC40NTMzIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAyMjMwIi8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjY4NTMiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDEyMUIiLz4KCTxzdG9wICBvZmZzZXQ9IjAuODc1NCIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDQwOCIvPgoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBpZD0icGF0aDc2IiBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiBzdHlsZT0iZmlsbDp1cmwoI3BhdGg3Nl8wMDAwMDE2OTU0NzA3NTczMDIzMDQ0NjUwMDAwMDAwNTgzMzA3ODY1ODg1NjQ4MTE5Ml8pOyIgZD0iCglNNDY2LjcsMTgxLjhDNDM0LjMsOTQuMiwzNDkuOSwzMS42LDI1MC45LDMxLjZDMTUwLDMxLjYsNjQuMyw5Ni42LDMzLjMsMTg3YzE4LjYsNDQuOSwxMDYuNiw4LjEsMjE0LjEsOC4xCglDMzU4LjcsMTk0LjksNDUyLjIsMjM0LjUsNDY2LjcsMTgxLjh6Ii8+Cjwvc3ZnPgo=&quot;,&quot;srcOrientation&quot;:&quot;Right&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;,&quot;srcOrientation&quot;:[]},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;derived&quot;:{&quot;blockParameters&quot;:{&quot;ForegroundColor&quot;:[0.9882352941176471,0.9882352941176471,0.7725490196078432],&quot;Limits&quot;:{&quot;Max&quot;:7,&quot;Min&quot;:0,&quot;Ticks&quot;:&quot;auto&quot;},&quot;ScaleColors&quot;:[],&quot;ScaleDirection&quot;:&quot;Clockwise&quot;,&quot;ScaleMax&quot;:7,&quot;ScaleMin&quot;:0,&quot;TickInterval&quot;:&quot;auto&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;}},&quot;settings&quot;:{&quot;BindingType&quot;:&quot;signal&quot;,&quot;aspectRatio&quot;:1.032258064516129,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:1,&quot;backgroundOpacity&quot;:1,&quot;direction&quot;:&quot;cw&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;flipLimits&quot;:0,&quot;orientation&quot;:&quot;horizontal&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;variant&quot;:&quot;half&quot;,&quot;version&quot;:&quot;R2023a&quot;},&quot;type&quot;:&quot;CircularGauge&quot;}</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pressure Relief System" SID="134">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[600, 143, 700, 237]</P>
+    <P Name="ZOrder">386</P>
+    <P Name="BackgroundColor">[0.333333, 1.000000, 0.000000]</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_134"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pressure Sensor" SID="145">
+    <PortCounts in="1"/>
+    <P Name="Position">[1280, -11, 1460, 141]</P>
+    <P Name="ZOrder">395</P>
+    <P Name="BackgroundColor">[0.709804, 0.015686, 0.015686]</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_145"/>
+  </Block>
+  <Block BlockType="Constant" Name="Required pressure" SID="120">
+    <P Name="Position">[965, 339, 1085, 441]</P>
+    <P Name="ZOrder">367</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="BackgroundColor">[0.235294, 0.733333, 1.000000]</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Value">1.619041319444444</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope1" SID="30">
+    <PortCounts in="1"/>
+    <P Name="Position">[310, -36, 340, -4]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Commented">on</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true,true,true,true,true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5,1.5,1.5,1.5,1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9,0.9,0.9,0.9,0.9,0.9],&quot;LineColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667],[0.9607843137254902,0.4666666666666667,0.1607843137254902],[0.28627450980392155,0.8588235294117647,0.25098039215686274],[0.7529411764705882,0.3607843137254902,0.984313725490196],[0.4235294117647059,0.9568627450980393,1],[0.9490196078431372,0.403921568627451,0.7725490196078432]],&quot;LineFaceAlpha&quot;:[1,1,1,1,1,1,1],&quot;LineEdgeAlpha&quot;:[1,1,1,1,1,1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;ChannelNames&quot;:&quot;&quot;,&quot;DefaultLegendLabel&quot;:&quot;&quot;,&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[-1],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Channel 1&quot;,&quot;Channel 2&quot;,&quot;Channel 3&quot;,&quot;Channel 4&quot;,&quot;Channel 5&quot;,&quot;Channel 6&quot;,&quot;Channel 7&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null,&quot;SerializedNumLines&quot;:[1]},&quot;MeasurementChannel&quot;:0,&quot;Peaks&quot;:{&quot;NumPeaks&quot;:3,&quot;MinHeight&quot;:null,&quot;MinDistance&quot;:1,&quot;Threshold&quot;:0,&quot;LabelPeaks&quot;:false,&quot;LabelFormat&quot;:&quot;x + y&quot;,&quot;Enabled&quot;:true},&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:3,&quot;MaxYLimReal&quot;:5.587689863534788,&quot;MinYLimMag&quot;:1,&quot;MinYLimReal&quot;:-0.5553576483008511,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:3,&quot;MaxYLimReal&quot;:5.587689863534788,&quot;MinYLimMag&quot;:1,&quot;MinYLimReal&quot;:-0.5553576483008511,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:-1,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
+    <P Name="WindowPosition">[1102.000000,32.000000,817.000000,818.000000,]</P>
+    <P Name="Visible">on</P>
+    <P Name="WasSavedAsWebScope">on</P>
+    <P Name="ContainerLayout">{&quot;WindowBounds&quot;:[1102,1313,813,812],&quot;gridDimensions&quot;:{&quot;w&quot;:1,&quot;h&quot;:1},&quot;tileCount&quot;:1,&quot;tileCoverage&quot;:1,&quot;columnWeights&quot;:1,&quot;rowWeights&quot;:1,&quot;tileOccupancy&quot;:{&quot;children&quot;:[{&quot;id&quot;:&quot;/Scope2&quot;},{&quot;id&quot;:&quot;/Scope&quot;},{&quot;id&quot;:&quot;/Tank/integrator scope&quot;},{&quot;id&quot;:&quot;/Scope1&quot;},{&quot;id&quot;:&quot;/Tank/mux scope&quot;}]}}</P>
+    <P Name="Floating">off</P>
+    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:3,&quot;MaxYLimReal&quot;:5.5876898635347878,&quot;MinYLimMag&quot;:1,&quot;MinYLimReal&quot;:-0.5553576483008511,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="ActiveDisplayYMinimum">-0.5553576483008511</P>
+    <P Name="ActiveDisplayYMaximum">5.5876898635347878</P>
+    <P Name="DataLoggingVariableName">ScopeData1</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="80">
+    <P Name="Position">[200, 105, 250, 145]</P>
+    <P Name="ZOrder">362</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Tank" SID="11">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[825, 49, 1040, 236]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="BackgroundColor">[0.392157, 0.474510, 0.541176]</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_11"/>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_11"/>
+  </Block>
+  <Block BlockType="CustomTuningWebBlock" Name="Vertical Slider" SID="79">
+    <P Name="Position">[-104, -56, 10, 378]</P>
+    <P Name="ZOrder">361</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="ForegroundColor">[1.000000, 1.000000, 0.784300]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="ShowName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_79"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;LinearScaleComponent&quot;,&quot;settings&quot;:{&quot;bounds&quot;:{&quot;max&quot;:5.065,&quot;min&quot;:1.013,&quot;tickInterval&quot;:&quot;auto&quot;},&quot;internalTickHeightScaleFactor&quot;:0.5,&quot;labelColor&quot;:[255,255,200],&quot;labelFont&quot;:{&quot;font&quot;:&quot;Arial&quot;,&quot;fontSize&quot;:12},&quot;labelOffset&quot;:0.05,&quot;labelTransparency&quot;:1,&quot;needleImage&quot;:{&quot;size&quot;:[596,842],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSBpZD0ic3ZnOCIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTk1LjMgODQxLjkiDQoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU5NS4zIDg0MS45OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRUMyMTI3O30NCgkuc3Qxe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6Ni45ODc0O3N0cm9rZS1taXRlcmxpbWl0OjExLjMzODY7fQ0KCS5zdDJ7ZmlsbDojRkRGRUZGO30NCgkuc3Qze2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6NS4yODY2O3N0cm9rZS1taXRlcmxpbWl0OjExLjMzODY7fQ0KPC9zdHlsZT4NCjxzb2RpcG9kaTpuYW1lZHZpZXcgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiBib3JkZXJvcGFjaXR5PSIxLjAiIGlkPSJiYXNlIiBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiIGlua3NjYXBlOmN4PSI0MDAiIGlua3NjYXBlOmN5PSI1NjAiIGlua3NjYXBlOmRvY3VtZW50LXJvdGF0aW9uPSIwIiBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0ibW0iIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwODEiIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTI1MiIgaW5rc2NhcGU6d2luZG93LXg9IjAiIGlua3NjYXBlOndpbmRvdy15PSIyMyIgaW5rc2NhcGU6em9vbT0iMC4zNSIgcGFnZWNvbG9yPSIjZmZmZmZmIiBzaG93Z3JpZD0iZmFsc2UiPg0KCTwvc29kaXBvZGk6bmFtZWR2aWV3Pg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIxMS4zLDExNS43aDE3My4xYzQ2LjksMCw4NC45LDMzLjIsODQuOSw3NC4ydjQ1My44YzAsNDEtMzgsNzQuMi04NC45LDc0LjJIMjExLjMNCgkJYy00Ni45LDAtODQuOS0zMy4yLTg0LjktNzQuMlYxODkuOUMxMjYuNCwxNDguOSwxNjQuNCwxMTUuNywyMTEuMywxMTUuN3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjExLjMsMTE1LjdoMTczLjFjNDYuOSwwLDg0LjksMzMuMiw4NC45LDc0LjJ2NDUzLjhjMCw0MS0zOCw3NC4yLTg0LjksNzQuMkgyMTEuMw0KCQljLTQ2LjksMC04NC45LTMzLjItODQuOS03NC4yVjE4OS45QzEyNi40LDE0OC45LDE2NC40LDExNS43LDIxMS4zLDExNS43eiIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yOTcuOSwxODUuNEwyOTcuOSwxODUuNGMxMi40LDAsMjIuNSw2LjMsMjIuNSwxNC4yVjYzNGMwLDcuOC0xMC4xLDE0LjItMjIuNSwxNC4ycy0yMi41LTYuMy0yMi41LTE0LjJWMTk5LjUNCgkJQzI3NS40LDE5MS43LDI4NS40LDE4NS40LDI5Ny45LDE4NS40eiIvPg0KCTxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0yOTcuOSwxODUuNEwyOTcuOSwxODUuNGMxMi40LDAsMjIuNSw2LjMsMjIuNSwxNC4yVjYzNGMwLDcuOC0xMC4xLDE0LjItMjIuNSwxNC4ycy0yMi41LTYuMy0yMi41LTE0LjJWMTk5LjUNCgkJQzI3NS40LDE5MS43LDI4NS40LDE4NS40LDI5Ny45LDE4NS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=&quot;,&quot;srcOrientation&quot;:&quot;horizontal&quot;},&quot;needleOffset&quot;:[0.0642123287671233,-0.8044596912521441],&quot;needleSize&quot;:{&quot;height&quot;:0.07668067226890757,&quot;width&quot;:0.4337797619047619},&quot;position&quot;:[0.03623949579831933,0.2829861111111111,0.6088789682539683,0.9196428571428571],&quot;referencePoint&quot;:&quot;auto&quot;,&quot;scaleColors&quot;:[],&quot;scaleColorsSize&quot;:0.2,&quot;scaleDirection&quot;:&quot;BT&quot;,&quot;showLabels&quot;:1,&quot;showMinorTicks&quot;:0,&quot;showSpanLine&quot;:1,&quot;showTicks&quot;:1,&quot;tickColor&quot;:[252,252,197],&quot;tickTransparency&quot;:1,&quot;valueBarColor&quot;:[0,114,189],&quot;valueBarOffset&quot;:-0.27,&quot;valueBarSize&quot;:0.1,&quot;valueBarTransparency&quot;:1}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[380,101],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMzgwIDEwMSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwMDJiNDI7fS5jbHMtMntmaWxsOiM0MjcwODI7fS5jbHMtM3tmaWxsOnVybCgjcmFkaWFsLWdyYWRpZW50KTt9LmNscy00e2ZpbGw6I2M4YzhjODtzdHJva2U6IzAwMDt9PC9zdHlsZT48cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbC1ncmFkaWVudCIgY3g9IjE5MCIgY3k9IjUwLjUiIHI9IjI2OS4yMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMC4wMSIgc3RvcC1jb2xvcj0iIzNlNGY1OCIvPjxzdG9wIG9mZnNldD0iMC4wNiIgc3RvcC1jb2xvcj0iIzQ0NTc2MSIvPjxzdG9wIG9mZnNldD0iMC4xNSIgc3RvcC1jb2xvcj0iIzU1NmE3NiIvPjxzdG9wIG9mZnNldD0iMC4yNSIgc3RvcC1jb2xvcj0iIzZkODg5NSIvPjxzdG9wIG9mZnNldD0iMC4zOCIgc3RvcC1jb2xvcj0iIzhmYjJjMyIvPjxzdG9wIG9mZnNldD0iMC41MiIgc3RvcC1jb2xvcj0iI2I2ZTRmYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE1NDY1NyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxnIGlkPSJmcmFtZSI+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxLTIiPjxyZWN0IGlkPSJyZWN0MTAzNiIgY2xhc3M9ImNscy0xIiB4PSIxMSIgeT0iMTEiIHdpZHRoPSIzNTgiIGhlaWdodD0iNzkiLz48cGF0aCBpZD0icGF0aDEwMzgiIGNsYXNzPSJjbHMtMiIgZD0iTTgsOFY5M0gzNzJWOFpNMzY5LDkwSDExVjExSDM2OVoiLz48cGF0aCBpZD0icGF0aDEwNDAiIGNsYXNzPSJjbHMtMyIgZD0iTTAsMFYxMDFIMzgwVjBaTTM3Miw5M0g4VjhIMzcyWiIvPjwvZz48L2c+PC9nPjxnIGlkPSJ0cmFjayI+PHBhdGggaWQ9InJlY3QxNjExIiBjbGFzcz0iY2xzLTQiIGQ9Ik0zMy4zNywyNi41OUgzNDYuNjNjNCwwLDcuMjUsMi42LDcuMjUsNS44MWgwYzAsMy4yMS0zLjI1LDUuODItNy4yNSw1LjgySDMzLjM3Yy00LDAtNy4yNS0yLjYxLTcuMjUtNS44MmgwQzI2LjEyLDI5LjE5LDI5LjM3LDI2LjU5LDMzLjM3LDI2LjU5WiIvPjwvZz48L3N2Zz4=&quot;,&quot;srcOrientation&quot;:&quot;horizontal&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;,&quot;srcOrientation&quot;:[]},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;derived&quot;:{&quot;blockParameters&quot;:{&quot;ForegroundColor&quot;:[0.9882352941176471,0.9882352941176471,0.7725490196078432],&quot;Limits&quot;:{&quot;Max&quot;:5.065,&quot;Min&quot;:1.013,&quot;Ticks&quot;:&quot;auto&quot;},&quot;ScaleColors&quot;:[],&quot;ScaleDirection&quot;:&quot;Clockwise&quot;,&quot;ScaleMax&quot;:5.065,&quot;ScaleMin&quot;:1.013,&quot;TickInterval&quot;:&quot;auto&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;}},&quot;settings&quot;:{&quot;BindingType&quot;:&quot;param&quot;,&quot;aspectRatio&quot;:3.7777777777777777,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:0,&quot;backgroundOpacity&quot;:1,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;foregroundColor&quot;:[252,252,196],&quot;orientation&quot;:&quot;vertical&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;version&quot;:&quot;R2023a&quot;},&quot;type&quot;:&quot;LinearGauge&quot;}</P>
+  </Block>
+  <Block BlockType="Constant" Name="Voltage" SID="8">
+    <P Name="Position">[165, 230, 195, 260]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="BlockMirror">on</P>
+  </Block>
+  <Line>
+    <P Name="Name">Qv</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Dst">11#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">80#out:1</P>
+    <P Name="Points">[31, 0; 0, -30]</P>
+    <Branch>
+      <P Name="ZOrder">78</P>
+      <P Name="Points">[0, -115]</P>
+      <P Name="Dst">30#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">63</P>
+      <P Name="Dst">4#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Points">[196, 0]</P>
+    <Branch>
+      <P Name="ZOrder">117</P>
+      <P Name="Points">[0, 350]</P>
+      <P Name="Dst">119#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">115</P>
+      <P Name="Points">[0, -80]</P>
+      <P Name="Dst">145#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">37</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Points">[-19, 0; 0, -105]</P>
+    <P Name="Dst">80#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">58</P>
+    <P Name="Src">119#out:1</P>
+    <P Name="Points">[-159, 0]</P>
+    <Branch>
+      <P Name="ZOrder">95</P>
+      <P Name="Points">[0, -300]</P>
+      <P Name="Dst">134#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">94</P>
+      <P Name="Dst">122#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">61</P>
+    <P Name="Src">122#out:1</P>
+    <P Name="Points">[-160, 0; 0, -365]</P>
+    <P Name="Dst">80#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">73</P>
+    <P Name="Src">120#out:1</P>
+    <P Name="Points">[-170, 0; 0, 90]</P>
+    <P Name="Dst">119#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">96</P>
+    <P Name="Src">134#out:1</P>
+    <P Name="Dst">11#in:2</P>
+  </Line>
+</System>

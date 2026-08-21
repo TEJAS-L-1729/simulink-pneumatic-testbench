@@ -1,0 +1,29 @@
+{
+    "GraphicalInterface":{
+        "ExternalFileReferences":[
+            {
+                "Path":"$bdroot\/Compare To Constant",
+                "Reference":"simulink\/Logic and Bit\nOperations\/Compare\nTo Constant",
+                "SID":"122",
+                "Type":"LIBRARY_BLOCK"
+            },
+            {
+                "Path":"$bdroot\/Pressure Relief System\/Compare To Constant1",
+                "Reference":"simulink\/Logic and Bit\nOperations\/Compare\nTo Constant",
+                "SID":"129",
+                "Type":"LIBRARY_BLOCK"
+            }
+        ],
+        "OrderedModelArguments":false,
+        "ParameterArgumentNames":"threshold",
+        "ParameterArguments":[
+            {
+                "ArgName":"threshold",
+                "DisplayName":"threshold"
+            }
+        ],
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"VariableStepAuto"
+    }
+}

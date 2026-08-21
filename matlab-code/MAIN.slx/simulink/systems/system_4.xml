@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 1922, 993]</P>
+  <P Name="ZoomFactor">200</P>
+  <Block BlockType="Inport" Name="In1" SID="5">
+    <P Name="Position">[110, 103, 140, 117]</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="Unit">lpm</P>
+  </Block>
+  <Block BlockType="Gain" Name="Qv per Volt" SID="9">
+    <P Name="Position">[205, 95, 235, 125]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Gain">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="6">
+    <P Name="Position">[360, 103, 390, 117]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Dst">9#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Dst">6#in:1</P>
+  </Line>
+</System>
