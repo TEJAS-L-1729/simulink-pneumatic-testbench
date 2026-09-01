@@ -24,6 +24,33 @@ The system is intentionally simplified (ideal gas behavior, no thermodynamic los
 - On–off (bang-bang) motor control with hysteresis, driven by pressure feedback
 
 ---
+ 
+## 🙋 My Contribution
+ 
+While this was submitted as a 4-person team lab project, I independently designed, modeled, and validated the **complete system end-to-end** — all five subsystems below:
+ 
+| Area | What I Did |
+|---|---|
+| ⚡ **Motor Subsystem** | Modeled the DC motor's voltage-to-RPM relationship and the pressure-feedback-driven bang-bang switching logic (comparator + hysteresis) |
+| 🌀 **Compressor Subsystem** | Modeled the positive-displacement compressor from first-principles piston geometry — swept volume, volumetric efficiency, and discharge pressure — as parameterized MATLAB Function blocks rather than a lookup table |
+| 🛢️ **Tank Subsystem** | Modeled pressure accumulation as a first-order ODE, integrated over time, with careful initialization of the integrator's state |
+| 🛡️ **Pressure Relief System** | Implemented the comparator-driven relief logic that vents excess pressure above the setpoint without introducing oscillation |
+| 📟 **Sensing & Signal Conditioning** | Implemented the linear pressure-to-4–20mA current mapping and validated it against three operating points |
+ 
+### Skills Learnt
+ 
+![Simulink](https://img.shields.io/badge/-MATLAB%20Simulink-0076A8?style=flat&logoColor=white)
+![MATLAB Function Blocks](https://img.shields.io/badge/-MATLAB%20Function%20Blocks-FF6F00?style=flat&logoColor=white)
+![Controls](https://img.shields.io/badge/-Bang--Bang%20Control-455A64?style=flat&logoColor=white)
+![Machine Design](https://img.shields.io/badge/-Reciprocating%20Compressor%20Design-B71C1C?style=flat&logoColor=white)
+![Instrumentation](https://img.shields.io/badge/-4--20mA%20Instrumentation-6A1B9A?style=flat&logoColor=white)
+ 
+- First-principles modeling of a reciprocating (positive-displacement) compressor from piston geometry, rather than treating it as a black-box flow source
+- Implementing bang-bang control with hysteresis in Simulink, and why it avoids switching chatter without needing PID tuning
+- Modeling pressure accumulation as an integrated first-order ODE, including correct integrator initialization
+- Implementing industrial-standard 4–20 mA signal conditioning and validating the linear mapping across multiple operating points
+- Keeping unit consistency across electrical, mechanical, and pneumatic domains feeding into one continuous model, and verifying each subsystem independently before full integration
+---
 
 ## System Architecture
 
